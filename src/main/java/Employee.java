@@ -61,7 +61,11 @@ public class Employee {
         }
 
         public void setGender(String gender) {
-            this.Gender = gender;
+            if ("Man".equalsIgnoreCase(gender) || "Woman".equalsIgnoreCase(gender) || "Non-Binary".equalsIgnoreCase(gender) ) {
+                this.Gender = gender;
+            } else {
+                throw new IllegalArgumentException("Invalid Phone Number Error");
+            }
         }
 
         public String getEmploymentType() {
@@ -69,7 +73,11 @@ public class Employee {
         }
 
         public void setEmploymentType(String employmentType) {
-            this.EmploymentType = employmentType;
+            if("Full-Time".equalsIgnoreCase(employmentType) || "Part-Time".equalsIgnoreCase(employmentType)) {
+                this.EmploymentType = employmentType;
+            } else {
+                throw new IllegalArgumentException("Invalid Employment type Error");
+            }
         }
 
         public int getAge() {
@@ -77,7 +85,11 @@ public class Employee {
         }
 
         public void setAge(int age) {
-            this.Age = age;
+            if (age >= 18) {
+                this.Age = age;
+            } else {
+                throw new IllegalArgumentException("Age must be over 18");
+            }
         }
     }
 
