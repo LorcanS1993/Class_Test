@@ -1,7 +1,5 @@
 public class Employee {
 
-    public class Employee {
-
         private String Name;
         private int PPSid;
         private long Phone;
@@ -11,13 +9,12 @@ public class Employee {
 
         public Employee(String name, int PPSid, long phone, String gender, String employmentType, int age) {
             Name = name;
-            this.PPSid = PPSid;
+            PPSid = PPSid;
             Phone = phone;
             Gender = gender;
             EmploymentType = employmentType;
             Age = age;
         }
-
 
         public String getName() {
             return Name;
@@ -93,4 +90,3 @@ public class Employee {
         }
     }
 
-}
