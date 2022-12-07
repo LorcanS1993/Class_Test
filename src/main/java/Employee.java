@@ -1,7 +1,7 @@
 public class Employee {
 
         private String Name;
-        private int PPSid;
+        private long PPSid;
         private long Phone;
         private String Gender;
         private String EmploymentType;
@@ -29,7 +29,7 @@ public class Employee {
 
         }
 
-        public int getPPSid() {
+        public long getPPSid() {
             return PPSid;
         }
 
@@ -61,7 +61,7 @@ public class Employee {
             if ("Man".equalsIgnoreCase(gender) || "Woman".equalsIgnoreCase(gender) || "Non-Binary".equalsIgnoreCase(gender) ) {
                 this.Gender = gender;
             } else {
-                throw new IllegalArgumentException("Invalid Phone Number Error");
+                throw new IllegalArgumentException("Invalid Gender Error");
             }
         }
 

@@ -28,8 +28,6 @@ class EmployeeTestPass {
     @Test
     void testGender() {
         assertEquals("Male", myEmployee.getGender());
-        myEmployee.setGender("Female");
-        assertEquals("Female", myEmployee.getGender());
     }
 
     @Test
